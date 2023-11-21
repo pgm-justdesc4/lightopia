@@ -1,0 +1,113 @@
+.container {
+  max-width: 35rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "ITC Avant Garde Gothic Std", sans-serif;
+}
+
+body p {
+  line-height: 150%;
+}
+
+/* HEADER */
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: hsl(220, 93%, 11%);
+}
+
+.container-header {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+}
+
+header img {
+  width: 14rem;
+}
+
+header nav,
+header ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  align-items: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.tickets-btn {
+  font-weight: 800;
+  background-color: hsl(282, 59%, 43%);
+}
+
+.tickets-btn {
+  padding: 1.2rem 3rem;
+  border-radius: 2rem;
+}
+
+/* HOME - Video */
+
+.home-video {
+  height: 90vh;
+}
+
+video {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.home-video__dates {
+  z-index: -1;
+  position: absolute;
+  bottom: 5rem;
+  right: 7rem;
+  display: inline-block;
+  background-color: hsla(220, 93%, 11%, 0.79);
+  padding: 3rem;
+  border-radius: 15rem;
+}
+
+.home-video__dates-text {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 0.2rem dotted green;
+  border-bottom: 0.2rem dotted green;
+  padding: 0.5rem 0;
+}
+
+/* HOME - Kerst tekst */
+
+.home-kerst {
+  text-align: center;
+}
+
+.home-kerst h1 {
+  max-width: 30rem;
+  font-size: 2.4rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin: 3rem auto;
+}
+
+.home-kerst p {
+  font-size: 1.2rem;
+}
