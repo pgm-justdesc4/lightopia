@@ -6,11 +6,20 @@
 
 body {
   font-family: "ITC Avant Garde Gothic Std", sans-serif;
+  color: white;
   background-color: hsl(220, 93%, 11%);
 }
 
 body p {
   line-height: 150%;
+}
+
+hr {
+  max-width: 10rem;
+  border: 0.1rem solid #24f182;
+  margin: 0 auto;
+  margin-top: 2.4rem;
+  margin-bottom: 2.5rem;
 }
 
 .button {
@@ -114,15 +123,7 @@ video {
   padding: 0.5rem 0;
 }
 
-/* HOME - christmas tekst */
-
-hr {
-  max-width: 10rem;
-  border: 0.1rem solid #24f182;
-  margin: 0 auto;
-  margin-top: 2.4rem;
-  margin-bottom: 2.5rem;
-}
+/* HOME - Christmas */
 
 .home-christmas {
   z-index: 10;
@@ -136,13 +137,13 @@ hr {
   padding-bottom: clamp(3rem, 16vh, 10rem);
 }
 
-.home-christmas__bg-left {
+.home-christmas__tree-left {
   position: absolute;
   top: 4rem;
-  left: -1.6rem;
+  left: -1.75rem;
 }
 
-.home-christmas__bg-right {
+.home-christmas__tree-right {
   position: absolute;
   top: 4rem;
   right: -0.95rem;
@@ -160,10 +161,10 @@ hr {
   }
 }
 
-.home-christmas__bg-left img,
-.home-christmas__bg-right img {
+.home-christmas__tree-left img,
+.home-christmas__tree-right img {
   width: clamp(0rem, 20vw, 30rem);
-  animation: swaying 5s infinite; /*seconds*/
+  animation: swaying 7s infinite;
 }
 
 .home-christmas h1 {
@@ -197,7 +198,70 @@ hr {
   overflow: hidden;
 }
 
-.home-christmas-two {
+.home-christmas__bg-snowflakes {
   background-image: url("../img/images/background-02.png");
   background-size: cover;
+}
+
+/* HOME - Reviews */
+
+.home-reviews {
+  background-color: hsl(221, 94%, 7%);
+}
+
+.home-reviews h3 {
+  max-width: 25rem;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 110%;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.home-reviews p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.home-reviews__container {
+  max-width: 65rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 3rem auto;
+  padding-bottom: 7rem;
+}
+
+.home-reviews article {
+  position: relative;
+  display: inline-block;
+  width: 30rem;
+}
+
+.home-reviews article p {
+  color: hsla(0, 0%, 100%, 0.902);
+  background-color: hsl(218, 44%, 16%);
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  padding: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: start;
+}
+
+.home-reviews article strong {
+  color: hsla(0, 0%, 100%, 0.902);
+  font-size: 0.9rem;
+  padding: 0 1.5rem;
+}
+
+.home-reviews__arrow {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: hsl(218, 44%, 16%);
+  left: 4.2rem;
+  bottom: 1.7rem;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
