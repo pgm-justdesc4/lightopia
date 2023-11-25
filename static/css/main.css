@@ -1,27 +1,46 @@
 .container {
-  max-width: 35rem;
+  max-width: 37rem;
   width: 90%;
   margin: 0 auto;
 }
 
 body {
   font-family: "ITC Avant Garde Gothic Std", sans-serif;
+  background-color: hsl(220, 93%, 11%);
 }
 
 body p {
   line-height: 150%;
 }
 
+.button {
+  display: inline-block;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: hsl(149, 76%, 46%);
+  padding: 1.25rem 2.75rem;
+  border-radius: 1.25rem;
+  transition: 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  color: black;
+}
+
 /* HEADER */
 
 header {
+  z-index: 20;
   position: sticky;
   top: 0;
   background-color: hsl(220, 93%, 11%);
 }
 
 .container-header {
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,11 +78,12 @@ header a {
 /* HOME - Video */
 
 .home-video {
-  height: 90vh;
+  height: 86.9vh;
+  overflow: hidden;
 }
 
 video {
-  z-index: -1;
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 0;
@@ -73,7 +93,7 @@ video {
 }
 
 .home-video__dates {
-  z-index: -1;
+  z-index: 10;
   position: absolute;
   bottom: 5rem;
   right: 7rem;
@@ -94,20 +114,90 @@ video {
   padding: 0.5rem 0;
 }
 
-/* HOME - Kerst tekst */
+/* HOME - christmas tekst */
 
-.home-kerst {
+hr {
+  max-width: 10rem;
+  border: 0.1rem solid #24f182;
+  margin: 0 auto;
+  margin-top: 2.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.home-christmas {
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
   text-align: center;
 }
 
-.home-kerst h1 {
-  max-width: 30rem;
-  font-size: 2.4rem;
-  line-height: 100%;
-  text-transform: uppercase;
-  margin: 3rem auto;
+.home-christmas .container {
+  padding-top: clamp(3rem, 16vh, 10rem);
+  padding-bottom: clamp(3rem, 16vh, 10rem);
 }
 
-.home-kerst p {
-  font-size: 1.2rem;
+.home-christmas__bg-left {
+  position: absolute;
+  top: 4rem;
+  left: -1.6rem;
+}
+
+.home-christmas__bg-right {
+  position: absolute;
+  top: 4rem;
+  right: -0.95rem;
+}
+
+@keyframes swaying {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: -5deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+.home-christmas__bg-left img,
+.home-christmas__bg-right img {
+  width: clamp(0rem, 20vw, 30rem);
+  animation: swaying 5s infinite; /*seconds*/
+}
+
+.home-christmas h1 {
+  max-width: 28rem;
+  color: white;
+  font-size: 2.5rem;
+  line-height: 109%;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.home-christmas h2 {
+  color: white;
+  font-size: 2.5rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.home-christmas p {
+  color: white;
+  font-size: 1.35em;
+}
+
+.home-christmas .button {
+  margin-top: 4rem;
+}
+
+.home-christmas__bg-img {
+  height: 32rem;
+  overflow: hidden;
+}
+
+.home-christmas-two {
+  background-image: url("../img/images/background-02.png");
+  background-size: cover;
 }
