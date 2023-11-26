@@ -84,6 +84,24 @@ header a {
   border-radius: 2rem;
 }
 
+/* Reusable Sections */
+
+.galery-reusable {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galery-reusable figure {
+  width: 20%;
+  height: 15rem;
+}
+
+.galery-reusable img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* HOME - Video */
 
 .home-video {
@@ -230,8 +248,10 @@ video {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin: 3rem auto;
-  padding-bottom: 7rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+  background-color: hsl(221, 94%, 7%);
 }
 
 .home-reviews article {
