@@ -8,6 +8,7 @@ body {
   font-family: "ITC Avant Garde Gothic Std", sans-serif;
   color: white;
   background-color: hsl(220, 93%, 11%);
+  overflow-x: hidden;
 }
 
 body p {
@@ -91,6 +92,33 @@ header a {
 .tickets-btn {
   padding: 1.2rem 3rem;
   border-radius: 2rem;
+}
+
+/* FOOTER */
+
+footer {
+  max-width: 50rem;
+  display: flex;
+  gap: 10rem;
+  margin: 0 auto;
+}
+
+.footer__text {
+  display: flex;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer__socials img {
+  width: 2rem;
+}
+
+footer img {
+  width: 14rem;
 }
 
 /* Reusable Sections */
