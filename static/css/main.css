@@ -22,7 +22,8 @@ hr {
   margin-bottom: 2.5rem;
 }
 
-.button {
+.button,
+.sub-button {
   display: inline-block;
   color: white;
   font-size: 1.2rem;
@@ -35,7 +36,15 @@ hr {
   transition: 0.2s;
 }
 
-.button:hover {
+.sub-button {
+  padding: 1rem 2.5rem;
+  border: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.button:hover,
+.sub-button:hover {
   transform: scale(1.05);
   color: black;
 }
@@ -100,6 +109,39 @@ header a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.subscribe-reusable {
+  position: relative;
+  text-align: center;
+  background-color: hsl(221, 94%, 7%);
+}
+
+.subscribe-reusable h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 110%;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+
+.subscribe-reusable input {
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.9rem 1.25rem;
+  border: 0;
+  border-radius: 0.5rem;
+  margin: 2rem auto;
+}
+
+.subscribe-reusable__bg {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe-reusable__bg img {
+  max-width: 10rem;
 }
 
 /* HOME - Video */
