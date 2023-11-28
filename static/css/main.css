@@ -119,7 +119,6 @@ hr {
 }
 
 .tickets-btn:hover {
-  color: white;
   background: #1cce72;
   background-image: linear-gradient(120deg, #1cce72 0, #0f58e6 150%);
 }
