@@ -1,0 +1,10 @@
+/* HOME */
+
+@media (max-width: 1000px) {
+  .header-large {
+    display: none;
+  }
+  .header-small {
+    display: block;
+  }
+}
