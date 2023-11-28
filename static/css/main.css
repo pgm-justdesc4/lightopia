@@ -164,14 +164,20 @@ footer {
 }
 
 footer h4 {
+  position: relative;
   font-size: 1.5rem;
   text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
-.footer__hr {
-  max-width: 2.5rem;
-  border: 0.1rem solid hsl(149, 76%, 46%);
-  margin: 1rem 0 1.2rem 0;
+footer h4::after {
+  content: "";
+  width: 2.5rem;
+  height: 0.125rem;
+  background: hsl(149, 76%, 46%);
+  position: absolute;
+  bottom: -0.8rem;
+  left: 0;
 }
 
 .footer__contact {
