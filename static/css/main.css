@@ -1,3 +1,9 @@
+/*
+===================================
+UTILITY CLASSES
+===================================
+*/
+
 .container {
   max-width: 37rem;
   width: 90%;
@@ -59,7 +65,11 @@ hr {
   color: black;
 }
 
-/* HEADER */
+/*
+===================================
+HEADER
+===================================
+*/
 
 .header-large {
   z-index: 20;
@@ -145,7 +155,11 @@ hr {
   margin-left: 0.7rem;
 }
 
-/* FOOTER */
+/*
+===================================
+FOOTER
+===================================
+*/
 
 footer {
   max-width: 85vw;
@@ -214,7 +228,11 @@ footer a:hover svg {
   font-size: 0.9rem;
 }
 
-/* Reusable Sections */
+/*
+===================================
+REUSABLE SECTIONS
+===================================
+*/
 
 .galery-reusable {
   display: flex;
@@ -264,7 +282,11 @@ footer a:hover svg {
   max-width: 10rem;
 }
 
-/* HOME - Video */
+/*
+===================================
+HOME - Video
+===================================
+*/
 
 .home-video {
   height: 86.9vh;
@@ -301,7 +323,11 @@ video {
   padding: 0.5rem 0;
 }
 
-/* HOME - Christmas */
+/*
+===================================
+HOME - Christmas
+===================================
+*/
 
 .home-christmas {
   z-index: 10;
@@ -381,7 +407,11 @@ video {
   background-size: cover;
 }
 
-/* HOME - Reviews */
+/*
+===================================
+HOME - Reviews
+===================================
+*/
 
 .home-reviews {
   background-color: hsl(221, 94%, 7%);
