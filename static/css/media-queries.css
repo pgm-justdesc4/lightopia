@@ -1,8 +1,8 @@
 @media (max-width: 1000px) {
-  .header-large {
+  header ul {
     display: none;
   }
-  .header-small {
+  .header-small__nav {
     display: block;
   }
   .galery-reusable figure {
@@ -11,13 +11,31 @@
 }
 
 @media (max-width: 647px) {
+  .container-header {
+    padding: 0.5rem;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .tickets-btn {
+    padding: 0.63rem 1.65rem;
+    border-radius: 0.8rem;
+  }
   .galery-reusable figure {
     width: 50%;
   }
   .home-christmas .container {
-    padding-top: 1rem;
+    padding-top: 5rem;
+  }
+  .home-christmas__bg-img {
+    height: 100%;
   }
   .footer__text {
     gap: 5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .tickets-btn {
+    display: none;
   }
 }

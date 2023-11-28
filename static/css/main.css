@@ -91,15 +91,7 @@ HEADER
 ===================================
 */
 
-.header-large {
-  z-index: 20;
-  position: sticky;
-  top: 0;
-  background-color: hsl(220, 93%, 11%);
-}
-
-.header-small {
-  display: none;
+header {
   z-index: 20;
   position: sticky;
   top: 0;
@@ -110,17 +102,15 @@ HEADER
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 5rem;
+  padding: 1.5rem;
 }
 
-.header-large img,
-.header-small img {
+header img {
   width: 14rem;
 }
 
-.header-large nav,
-.header-small nav,
-.header-large ul {
+header nav,
+header ul {
   display: flex;
   gap: 3rem;
   list-style: none;
@@ -132,8 +122,7 @@ header li {
   position: relative;
 }
 
-.header-large a,
-.header-small a {
+header a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -145,29 +134,35 @@ header li {
   background-color: hsl(282, 59%, 43%);
   background-image: linear-gradient(120deg, #b50090 0, #0f58e6 100%);
   padding: 1.2rem 3rem;
+  margin-top: 0.5rem;
   border-radius: 1rem;
 }
 
-.header-large a:hover {
+header li a:hover {
   color: hsl(149, 76%, 46%);
 }
 
 .tickets-btn:hover {
   background: #1cce72;
   background-image: linear-gradient(120deg, #1cce72 0, #0f58e6 150%);
+  color: black;
 }
 
 /* HEADER - Small Menu */
 
 .header-small__nav {
-  width: 4.6rem;
+  display: none;
+  z-index: 20;
+  position: sticky;
+  top: 0;
+  background-color: hsl(220, 93%, 11%);
   height: 4.4rem;
   padding-top: 1rem;
 }
 
 .header-small__nav span {
   display: block;
-  height: 0.1rem;
+  height: 0.15rem;
   width: 2.25rem;
   background-color: white;
   margin: 0.5rem 0;
@@ -175,7 +170,6 @@ header li {
 
 .header-small__nav span:nth-child(2) {
   width: 1.55rem;
-  height: 0.15rem;
   margin-left: 0.7rem;
 }
 
@@ -506,6 +500,7 @@ PARCOURS - Text
 .parcours {
   position: relative;
   text-align: center;
+  overflow: hidden;
 }
 
 .parcours__container {
