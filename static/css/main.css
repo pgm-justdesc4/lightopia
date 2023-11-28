@@ -5,10 +5,18 @@
 }
 
 body {
-  font-family: "ITC Avant Garde Gothic Std", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
   background-color: hsl(220, 93%, 11%);
   overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "ITC Avant Garde Gothic Std", sans-serif;
+  font-weight: 700;
 }
 
 body p {
@@ -27,8 +35,9 @@ hr {
 .sub-button {
   display: inline-block;
   color: white;
+  font-family: "ITC Avant Garde Gothic Std", sans-serif;
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   background-color: hsl(149, 76%, 46%);
@@ -52,7 +61,15 @@ hr {
 
 /* HEADER */
 
-header {
+.header-large {
+  z-index: 20;
+  position: sticky;
+  top: 0;
+  background-color: hsl(220, 93%, 11%);
+}
+
+.header-small {
+  display: none;
   z-index: 20;
   position: sticky;
   top: 0;
@@ -66,59 +83,130 @@ header {
   padding: 2rem 5rem;
 }
 
-header img {
+.header-large img,
+.header-small img {
   width: 14rem;
 }
 
-header nav,
-header ul {
+.header-large nav,
+.header-small nav,
+.header-large ul {
   display: flex;
   gap: 3rem;
   list-style: none;
   align-items: center;
+  padding-top: 0.5rem;
 }
 
-header a {
+.header-large a,
+.header-small a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .tickets-btn {
-  font-weight: 800;
+  font-family: "ITC Avant Garde Gothic Std", sans-serif;
+  font-weight: 700;
   background-color: hsl(282, 59%, 43%);
+  background-image: linear-gradient(120deg, #b50090 0, #0f58e6 100%);
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
 }
 
-.tickets-btn {
-  padding: 1.2rem 3rem;
-  border-radius: 2rem;
+.header-large a:hover {
+  color: hsl(149, 76%, 46%);
+}
+
+.tickets-btn:hover {
+  color: white;
+  background: #1cce72;
+  background-image: linear-gradient(120deg, #1cce72 0, #0f58e6 150%);
+}
+
+/* HEADER - Small Menu */
+
+.header-small__nav {
+  width: 4.6rem;
+  height: 4.4rem;
+  padding-top: 1rem;
+}
+
+.header-small__nav span {
+  display: block;
+  height: 0.1rem;
+  width: 2.25rem;
+  background-color: white;
+  margin: 0.5rem 0;
+}
+
+.header-small__nav span:nth-child(2) {
+  width: 1.55rem;
+  height: 0.15rem;
+  margin-left: 0.7rem;
 }
 
 /* FOOTER */
 
 footer {
-  max-width: 50rem;
+  max-width: 85vw;
   display: flex;
-  gap: 10rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 auto;
+  padding: 5rem 0 10rem 0;
+  font-size: 1.1rem;
 }
 
 .footer__text {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+footer h4 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.footer__hr {
+  max-width: 2.5rem;
+  border: 0.1rem solid hsl(149, 76%, 46%);
+  margin: 1rem 0 1.2rem 0;
+}
+
+.footer__contact {
+  margin-top: 1.5rem;
 }
 
 .footer__socials {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
-.footer__socials img {
-  width: 2rem;
+.footer__socials svg {
+  width: 1.5rem;
+  color: white;
 }
 
 footer img {
   width: 14rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover,
+footer a:hover svg {
+  color: hsl(149, 76%, 46%);
+}
+
+.footer__terms {
+  font-size: 0.9rem;
 }
 
 /* Reusable Sections */
@@ -130,12 +218,11 @@ footer img {
 
 .galery-reusable figure {
   width: 20%;
-  height: 15rem;
 }
 
 .galery-reusable img {
+  height: 15rem;
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -181,12 +268,9 @@ footer img {
 
 video {
   z-index: 10;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .home-video__dates {
@@ -201,7 +285,8 @@ video {
 }
 
 .home-video__dates-text {
-  font-weight: 800;
+  font-family: "ITC Avant Garde Gothic Std", sans-serif;
+  font-weight: 700;
   font-size: 1.2rem;
   color: white;
   text-transform: uppercase;
@@ -308,7 +393,7 @@ video {
 }
 
 .home-reviews p {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   text-align: center;
 }
 
@@ -325,12 +410,12 @@ video {
 }
 
 .home-reviews article {
-  position: relative;
   display: inline-block;
   width: 30rem;
 }
 
 .home-reviews article p {
+  position: relative;
   color: hsla(0, 0%, 100%, 0.902);
   background-color: hsl(218, 44%, 16%);
   font-size: 1rem;
@@ -338,6 +423,7 @@ video {
   padding: 2.5rem;
   margin-bottom: 1.5rem;
   text-align: start;
+  height: calc(100% - 2.63rem);
 }
 
 .home-reviews article strong {
@@ -352,6 +438,6 @@ video {
   height: 1.5rem;
   background-color: hsl(218, 44%, 16%);
   left: 4.2rem;
-  bottom: 1.7rem;
+  bottom: -1.25rem;
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
