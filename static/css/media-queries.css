@@ -1,10 +1,23 @@
-/* HOME */
-
 @media (max-width: 1000px) {
   .header-large {
     display: none;
   }
   .header-small {
     display: block;
+  }
+  .galery-reusable figure {
+    width: 33.3333333%;
+  }
+}
+
+@media (max-width: 647px) {
+  .galery-reusable figure {
+    width: 50%;
+  }
+  .home-christmas .container {
+    padding-top: 1rem;
+  }
+  .footer__text {
+    gap: 5rem;
   }
 }

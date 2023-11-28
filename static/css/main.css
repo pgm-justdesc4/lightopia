@@ -1,14 +1,8 @@
 /*
 ===================================
-UTILITY CLASSES
+STANDARD VALUES
 ===================================
 */
-
-.container {
-  max-width: 37rem;
-  width: 90%;
-  margin: 0 auto;
-}
 
 body {
   font-family: "Raleway", sans-serif;
@@ -23,10 +17,25 @@ h3,
 h4 {
   font-family: "ITC Avant Garde Gothic Std", sans-serif;
   font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
 }
 
 body p {
   line-height: 150%;
+}
+
+/*
+===================================
+UTILITY CLASSES
+===================================
+*/
+
+.container {
+  max-width: 37rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 hr {
@@ -194,8 +203,8 @@ footer {
 
 footer h4 {
   position: relative;
+  text-align: start;
   font-size: 1.5rem;
-  text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
@@ -307,9 +316,7 @@ REUSABLE SECTIONS
 
 .subscribe-reusable h3 {
   font-size: 2.5rem;
-  text-transform: uppercase;
   line-height: 110%;
-  margin: 0 auto;
   padding-top: 10rem;
 }
 
@@ -396,16 +403,12 @@ HOME - Christmas
   color: white;
   font-size: 2.5rem;
   line-height: 109%;
-  text-transform: uppercase;
-  margin: 0 auto;
 }
 
 .home-christmas h2 {
   color: white;
   font-size: 2.5rem;
   line-height: 100%;
-  text-transform: uppercase;
-  margin: 0 auto;
 }
 
 .home-christmas p {
@@ -440,10 +443,7 @@ HOME - Reviews
 .home-reviews h3 {
   max-width: 25rem;
   font-size: 2.5rem;
-  text-align: center;
-  text-transform: uppercase;
   line-height: 110%;
-  margin: 0 auto;
   padding-top: 5rem;
 }
 
@@ -518,8 +518,6 @@ PARCOURS - Text
   max-width: 30rem;
   font-size: 2.5rem;
   line-height: 110%;
-  text-transform: uppercase;
-  margin: 0 auto;
   padding-top: 10rem;
 }
 
@@ -545,4 +543,25 @@ PARCOURS - Spotlight
   height: 32rem;
   object-fit: cover;
   object-position: top;
+}
+
+/*
+===================================
+PRAKTISCH - Practical
+===================================
+*/
+
+.practical h1,
+.practical h2 {
+  font-size: 2.5rem;
+}
+
+.practical p {
+  font-size: 1.35rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.practical a {
+  display: inline;
 }
