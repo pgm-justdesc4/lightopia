@@ -517,8 +517,7 @@ PARCOURS - Text
 }
 
 .parcours__container {
-  max-width: 65rem;
-  width: 90%;
+  max-width: 62.5rem;
   margin: 0 auto;
 }
 
@@ -534,6 +533,16 @@ PARCOURS - Text
   font-size: 1.4rem;
   max-width: 35rem;
   margin: 3rem auto;
+}
+
+.parcours .map {
+  position: relative;
+}
+
+.map-pointers img {
+  background-color: #1cce72;
+  padding: 1rem;
+  cursor: pointer;
 }
 
 /*
