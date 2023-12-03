@@ -30,8 +30,11 @@ body p {
   line-height: 150%;
 }
 
-.close {
+.close,
+.imgClose {
   display: none;
+  visibility: hidden;
+  z-index: -1;
 }
 
 /*
@@ -533,16 +536,6 @@ PARCOURS - Text
   font-size: 1.4rem;
   max-width: 35rem;
   margin: 3rem auto;
-}
-
-.parcours .map {
-  position: relative;
-}
-
-.map-pointers img {
-  background-color: #1cce72;
-  padding: 1rem;
-  cursor: pointer;
 }
 
 /*

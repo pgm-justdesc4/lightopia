@@ -10,6 +10,12 @@
   }
 }
 
+@media (max-width: 800px) {
+  .map-pointers img {
+    width: 3rem;
+  }
+}
+
 @media (max-width: 647px) {
   .container-header {
     padding: 0.5rem;
