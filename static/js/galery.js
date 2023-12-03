@@ -8,8 +8,8 @@
         const $src = $image.src;
         let html = "";
         html += `
-            <div id="close" class="galery-wrapper">
-                <figure id="closeBtn" class="close-btn">
+            <div id="closeImage" class="galery-wrapper">
+                <figure id="closeBtnImage" class="close-btn">
                     <img src="static/img/images/close-btn.svg" alt="Close button">
                 </figure>
                 <figure>
@@ -19,10 +19,10 @@
 
         $galeryWrapper.innerHTML = html;
 
-        const $closeBtn = document.getElementById("closeBtn");
-        $closeBtn.addEventListener("click", function () {
-          const $close = document.getElementById("close");
-          $close.classList.add("close");
+        const $closeBtnImage = document.getElementById("closeBtnImage");
+        $closeBtnImage.addEventListener("click", function () {
+          const $closeImage = document.getElementById("closeImage");
+          $closeImage.classList.add("close");
         });
       });
     });
