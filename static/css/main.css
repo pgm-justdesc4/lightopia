@@ -153,7 +153,8 @@ header li a:hover {
   color: hsl(149, 76%, 46%);
 }
 
-.tickets-btn:hover {
+.tickets-btn:hover,
+.mobile-menu .tickets-btn:hover {
   background: #1cce72;
   background-image: linear-gradient(120deg, #1cce72 0, #0f58e6 150%);
   color: black;

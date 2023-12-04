@@ -19,11 +19,52 @@ MOBILE MENU
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20vh;
+  margin-top: 25vh;
+  text-align: center;
+}
+
+.mobile-menu ul {
+  padding: 0;
+}
+
+.mobile-menu li {
+  list-style: none;
+  margin-bottom: 1rem;
 }
 
 .mobile-menu a {
   display: block;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.mobile-menu .tickets-btn {
+  padding: 1rem 2.25rem;
+  border-radius: 1rem;
+}
+
+.mobile-menu__languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+}
+
+.mobile-menu__languages a {
+  font-size: 1rem;
+}
+
+.mobile-menu__languages p {
+  font-size: 1rem;
+  color: hsl(149, 76%, 46%);
+}
+
+.mobile-menu a:hover {
+  color: hsl(149, 76%, 46%);
 }
 
 .closeBtn {

@@ -27,7 +27,15 @@
                         <a href="faq.html">FAQ</a>
                     </li>
                 </ul>
+                <a class="tickets-btn" href="#">Tickets</a>
             </nav>
+            <div class="mobile-menu__languages">
+                <a href="#">NL</a>
+                <p>|</p>
+                <a href="#">FR</a>
+                <p>|</p>
+                <a href="#">EN</a>
+            </div>
             <div id="closeBtn" class="closeBtn">
                     <span></span>
                     <span></span>
