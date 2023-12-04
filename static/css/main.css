@@ -562,9 +562,28 @@ PRAKTISCH - Practical
 ===================================
 */
 
+.practical {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.practical .tree-left,
+.practical .tree-right {
+  top: 8rem;
+}
+
 .practical h1,
 .practical h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+
+.practical h3 {
+  display: inline-block;
+  background-color: #032769;
+  padding: 0.35rem 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
 }
 
 .practical p {
