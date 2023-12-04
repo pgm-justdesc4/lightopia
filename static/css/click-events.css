@@ -128,8 +128,8 @@ MAP
 
 .map__wrapper img {
   display: inline-block;
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 90%;
+  max-height: 90%;
   object-fit: contain;
 }
 
