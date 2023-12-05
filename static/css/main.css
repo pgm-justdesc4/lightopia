@@ -385,6 +385,7 @@ video {
   border-top: 0.2rem dotted green;
   border-bottom: 0.2rem dotted green;
   padding: 0.5rem 0;
+  margin: 0.5rem 0;
 }
 
 .home-video__dates-text p {
@@ -510,7 +511,7 @@ HOME - Reviews
 
 /*
 ===================================
-PARCOURS - Text
+PARCOURS
 ===================================
 */
 
@@ -539,11 +540,7 @@ PARCOURS - Text
   margin: 3rem auto;
 }
 
-/*
-===================================
-PARCOURS - Spotlight
-===================================
-*/
+/* PARCOURS - Spotlight */
 
 .parcours__spotlight {
   padding: 8rem 0 5rem 0;
@@ -558,7 +555,7 @@ PARCOURS - Spotlight
 
 /*
 ===================================
-PRAKTISCH - Practical
+PRAKTISCH
 ===================================
 */
 
@@ -574,8 +571,9 @@ PRAKTISCH - Practical
 
 .practical h1,
 .practical h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   margin-top: 5rem;
+  line-height: 110%;
 }
 
 .practical h3 {
@@ -594,4 +592,106 @@ PRAKTISCH - Practical
 
 .practical a {
   display: inline;
+}
+
+/*
+===================================
+GALERY
+===================================
+*/
+
+.galery__text {
+  text-align: center;
+  margin: 2rem 0;
+  padding-top: 5rem;
+  font-size: 1.2rem;
+}
+
+.galery__text h1 {
+  font-size: 2rem;
+  line-height: 110%;
+  max-width: 20rem;
+}
+
+.galery-grid .tree-left,
+.galery-grid .tree-right {
+  top: 8rem;
+}
+
+/* GALERY - Grid */
+
+.galery-grid {
+  margin-bottom: 7rem;
+}
+
+.galery-grid .container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  gap: 1rem;
+  max-width: 45rem;
+}
+
+.galery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.galery-grid .grid-1,
+.galery-grid .grid-2 {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.galery-grid .grid-3 {
+  grid-column: span 6;
+  grid-row: span 1;
+}
+
+.galery-grid .grid-4 {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.galery-grid .grid-5,
+.galery-grid .grid-6 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.galery-grid .grid-7 {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.galery-grid .grid-8 {
+  grid-column: span 6;
+}
+
+.galery-grid .grid-9,
+.galery-grid .grid-10 {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.galery-grid .grid-11,
+.galery-grid .grid-12 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.galery-grid .grid-13 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.galery-grid .grid-14 {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.galery-grid .grid-15 {
+  grid-column: span 6;
 }

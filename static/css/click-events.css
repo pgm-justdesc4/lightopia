@@ -142,12 +142,26 @@ MAP
   position: relative;
 }
 
+@keyframes bounce {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
 .map-pointers {
   width: 5%;
   background-color: hsl(149, 76%, 46%);
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 50%;
+  animation: bounce 1.5s infinite;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .map-pointers img {
