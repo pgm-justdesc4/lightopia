@@ -19,7 +19,7 @@ MOBILE MENU
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 25vh;
+  margin-top: 20vh;
   text-align: center;
 }
 
@@ -144,17 +144,18 @@ MAP
 
 @keyframes bounce {
   0% {
-    transform: scale(0.9);
+    scale: 0.9;
   }
   50% {
-    transform: scale(1.1);
+    scale: 1.1;
   }
   100% {
-    transform: scale(0.9);
+    scale: 0.9;
   }
 }
 
 .map-pointers {
+  position: absolute;
   width: 5%;
   background-color: hsl(149, 76%, 46%);
   cursor: pointer;

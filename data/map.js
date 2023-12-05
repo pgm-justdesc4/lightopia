@@ -1,8 +1,8 @@
 const pointers = [
   {
     id: "Map pointer 1",
-    y: "58%",
-    x: "66%",
+    y: "60.4%",
+    x: "68%",
     image: "static/img/map-images/01.jpg",
     icon: "static/img/map-images/icon.svg",
   },

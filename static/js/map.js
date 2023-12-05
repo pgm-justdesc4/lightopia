@@ -8,7 +8,6 @@
       html += `
         <figure data-id="${pointer.id}" class="map-pointers" 
             style="
-                position: absolute;
                 top:${pointer.y}; 
                 left:${pointer.x};">
             <img src="${pointer.icon}" alt="${pointer.id}">
