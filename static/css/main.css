@@ -553,6 +553,24 @@ PARCOURS
   object-position: top;
 }
 
+/* PARCOURS - Galery */
+
+.parcours__galery {
+  background-image: url("../img/images/background-02.png");
+  background-size: contain;
+  text-align: center;
+}
+
+.parcours__galery-container {
+  max-width: 37rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.parcours__galery p {
+  margin-bottom: 2.5rem;
+}
+
 /*
 ===================================
 PRAKTISCH
