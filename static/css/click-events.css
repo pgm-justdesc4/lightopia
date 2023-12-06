@@ -33,7 +33,8 @@ MOBILE MENU
 }
 
 .mobile-menu a {
-  display: block;
+  position: relative;
+  display: inline-block;
   color: white;
   font-size: 1.5rem;
   font-weight: 600;
@@ -94,6 +95,22 @@ MOBILE MENU
   right: 1rem;
   width: 2.25rem;
   transform: rotate(-45deg) translateY(-15px);
+}
+
+.page-pointer__mobile {
+  z-index: 99;
+}
+
+.page-pointer__mobile::after {
+  position: absolute;
+  content: "";
+  width: 95%;
+  height: 0.2rem;
+  bottom: -0.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: hsl(149, 76%, 46%);
+  display: block;
 }
 
 /*

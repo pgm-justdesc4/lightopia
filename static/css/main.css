@@ -91,7 +91,8 @@ hr {
   width: 0.35rem;
   height: 0.35rem;
   bottom: -1rem;
-  left: 48%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: hsl(149, 76%, 46%);
   border-radius: 50%;
 }

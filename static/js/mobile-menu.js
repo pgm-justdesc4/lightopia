@@ -12,19 +12,39 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <a class="${
+                          window.location.href.includes("index.html")
+                            ? "page-pointer__mobile"
+                            : ""
+                        }" href="index.html">Home</a>
                     </li>
                     <li>
-                        <a class="page-pointer" href="parcours.html">Parcours</a>
+                        <a class="${
+                          window.location.href.includes("parcours.html")
+                            ? "page-pointer__mobile"
+                            : ""
+                        }" href="parcours.html">Parcours</a>
                     </li>
                     <li>
-                        <a href="praktisch.html">Praktisch</a>
+                        <a class="${
+                          window.location.href.includes("praktisch.html")
+                            ? "page-pointer__mobile"
+                            : ""
+                        }" href="praktisch.html">Praktisch</a>
                     </li>
                     <li>
-                        <a href="galerij.html">Galerij</a>
+                        <a class="${
+                          window.location.href.includes("galerij.html")
+                            ? "page-pointer__mobile"
+                            : ""
+                        }" href="galerij.html">Galerij</a>
                     </li>
                     <li>
-                        <a href="faq.html">FAQ</a>
+                        <a class="${
+                          window.location.href.includes("faq.html")
+                            ? "page-pointer__mobile"
+                            : ""
+                        }" href="faq.html">FAQ</a>
                     </li>
                 </ul>
                 <a class="tickets-btn" href="#">Tickets</a>
