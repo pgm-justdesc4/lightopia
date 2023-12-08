@@ -213,3 +213,14 @@ MAP
   width: 2rem;
   cursor: pointer;
 }
+
+/*
+===================================
+FAQ
+===================================
+*/
+
+.faq__question {
+  cursor: pointer;
+  margin: 2rem 0;
+}

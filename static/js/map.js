@@ -1,6 +1,8 @@
 (function () {
   const $map = document.getElementById("map");
 
+  // MAP POINTERS
+
   function getHTMLForPointers(pointers) {
     let html = `<img src="static/img/images/trail-map.jpg" alt="Trail-map">
                 <div id="pointers">`;
@@ -19,6 +21,8 @@
     </div>`;
     return html;
   }
+
+  // IMAGES
 
   function registerListeners() {
     const $pointers = document.querySelectorAll("#pointers figure");
