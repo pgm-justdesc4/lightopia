@@ -12,6 +12,7 @@ MOBILE MENU
   background-color: #021337;
   width: 100%;
   height: 100%;
+  animation: opacity 0.5s;
 }
 
 .mobile-menu nav {
@@ -97,10 +98,6 @@ MOBILE MENU
   transform: rotate(-45deg) translateY(-15px);
 }
 
-.page-pointer__mobile {
-  z-index: 99;
-}
-
 .page-pointer__mobile::after {
   position: absolute;
   content: "";
@@ -111,42 +108,6 @@ MOBILE MENU
   transform: translateX(-50%);
   background-color: hsl(149, 76%, 46%);
   display: block;
-}
-
-/*
-===================================
-GALERY
-===================================
-*/
-
-.galery-wrapper {
-  z-index: 30;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: hsla(216, 8%, 12%, 0.776);
-  width: 100%;
-  height: 100%;
-}
-
-.galery-wrapper img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  max-width: 90vw;
-  max-height: 90vh;
-  object-fit: contain;
-}
-
-.galery-wrapper .close-btn {
-  position: fixed;
-  top: 2rem;
-  right: 1rem;
-  width: 2rem;
-  cursor: pointer;
 }
 
 /*
@@ -216,11 +177,90 @@ MAP
 
 /*
 ===================================
+GALERY
+===================================
+*/
+
+.galery-wrapper {
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: hsla(216, 8%, 12%, 0.776);
+  width: 100%;
+  height: 100%;
+}
+
+.galery-wrapper img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.galery-wrapper .close-btn {
+  position: fixed;
+  top: 2rem;
+  right: 1rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+/*
+===================================
 FAQ
 ===================================
 */
 
-.faq__question {
+.faq {
+  list-style: none;
+  padding: 0;
+}
+
+.faq h3 {
+  margin-right: 2rem;
+}
+
+.faq ul {
+  text-decoration: none;
+  padding: 0;
+}
+
+.faq li {
+  position: relative;
+  list-style: none;
+}
+
+.faq__boxes li {
   cursor: pointer;
+  border: 0.1rem solid white;
+  border-radius: 0.5rem;
   margin: 2rem 0;
+  padding: 1rem;
+}
+
+.faq__question {
+  text-align: start;
+  text-transform: none;
+}
+
+.faq__answer {
+  margin-top: 0.5rem;
+}
+
+.faq-plus {
+  width: 1.6rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.rotate {
+  rotate: 45deg;
+  transition: 0.5s ease;
 }

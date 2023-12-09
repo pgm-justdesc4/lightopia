@@ -37,6 +37,15 @@ body p {
   z-index: -1;
 }
 
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*
 ===================================
 UTILITY CLASSES
@@ -95,6 +104,7 @@ hr {
   transform: translateX(-50%);
   background-color: hsl(149, 76%, 46%);
   border-radius: 50%;
+  animation: opacity 1.5s;
 }
 
 /*
