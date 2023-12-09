@@ -9,6 +9,9 @@
         (question) => `
         <li>
             <h3 class="faq__question">${question.question}</h3>
+            <figure class="faq-plus">
+              <img src="static/img/images/faq-plus.svg" alt="Plus icon">
+            </figure>
             <p id="answer" class="faq__answer close">
               ${question.answer}
             </p>
@@ -39,9 +42,9 @@
     return categories
       .map((category) => {
         return `
+        <h2>${category}</h2>
             <li>
-                <h2>${category}</h2>
-                <ul id="questions">
+                <ul id="questions" class="faq__boxes">
                     ${getHTMLForQuestions(
                       questions.filter((question) => {
                         return question.category === category;
@@ -56,22 +59,28 @@
   // ANSWERS
 
   function registerListeners() {
-    const $questions = document.querySelectorAll(".faq__question");
+    const $questions = document.querySelectorAll(".faq__boxes li");
     const $answers = document.querySelectorAll(".faq__answer");
+    const $plusIcons = document.querySelectorAll(".faq-plus");
 
     $questions.forEach((question, questionIndex) => {
       question.addEventListener("click", function () {
         const $answer = $answers[questionIndex];
+        const $plusIcon = $plusIcons[questionIndex];
 
         if ($answer.classList.contains("close")) {
           $answer.classList.remove("close");
+          $plusIcon.classList.add("rotate");
         } else {
           $answer.classList.add("close");
+          $plusIcon.classList.remove("rotate");
         }
 
         $answers.forEach((answer, answerIndex) => {
+          const $plusIcon = $plusIcons[answerIndex];
           if (answerIndex !== questionIndex) {
             answer.classList.add("close");
+            $plusIcon.classList.remove("rotate");
           }
         });
       });
