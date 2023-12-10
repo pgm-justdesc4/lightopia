@@ -34,8 +34,8 @@
         });
 
         let html = `
-        <div id="closeImage" class="map__wrapper">
-        <figure id="closeBtnImage" class="close-btn">
+        <div id="closeMapImage" class="map__wrapper">
+        <figure id="closeBtnMapImage" class="close-btn">
             <img src="static/img/images/close-btn.svg" alt="Close button">
         </figure>
         <figure>
@@ -46,9 +46,9 @@
         const $imageWrapper = document.getElementById("imageWrapper");
         $imageWrapper.innerHTML = html;
 
-        const $closeBtnImage = document.getElementById("closeBtnImage");
+        const $closeBtnImage = document.getElementById("closeBtnMapImage");
         $closeBtnImage.addEventListener("click", function () {
-          const $closeImage = document.getElementById("closeImage");
+          const $closeImage = document.getElementById("closeMapImage");
           $closeImage.classList.add("close");
         });
       });
