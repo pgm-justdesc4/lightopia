@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+body p {
+  line-height: 150%;
+}
+
 main,
 .overlay-body {
   overflow: hidden;
@@ -25,10 +29,6 @@ h4 {
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-}
-
-body p {
-  line-height: 150%;
 }
 
 .close,
@@ -174,7 +174,7 @@ header li a:hover {
 
 /* HEADER - Small Menu */
 
-.header-small__nav {
+.mobile-menu__nav {
   display: none;
   z-index: 20;
   position: sticky;
@@ -184,7 +184,7 @@ header li a:hover {
   padding-top: 1rem;
 }
 
-.header-small__nav span {
+.mobile-menu__nav span {
   display: block;
   height: 0.15rem;
   width: 2.25rem;
@@ -192,7 +192,7 @@ header li a:hover {
   margin: 0.5rem 0;
 }
 
-.header-small__nav span:nth-child(2) {
+.mobile-menu__nav span:nth-child(2) {
   width: 1.55rem;
   margin-left: 0.7rem;
 }

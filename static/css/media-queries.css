@@ -2,7 +2,7 @@
   header ul {
     display: none;
   }
-  .header-small__nav {
+  .mobile-menu__nav {
     display: block;
   }
   .galery-reusable figure {
