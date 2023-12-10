@@ -759,6 +759,7 @@ FAQ
 .faq h1 {
   padding-top: 7rem;
   font-size: 2rem;
+  line-height: 110%;
 }
 
 .faq span {
@@ -766,6 +767,7 @@ FAQ
   text-align: center;
   font-size: 1.35rem;
   margin-bottom: 3rem;
+  line-height: 140%;
 }
 
 .faq a {
