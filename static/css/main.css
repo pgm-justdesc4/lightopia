@@ -11,6 +11,7 @@ body {
   overflow-x: hidden;
 }
 
+main,
 .overlay-body {
   overflow: hidden;
 }
@@ -279,13 +280,13 @@ REUSABLE SECTIONS
 .tree-left {
   position: absolute;
   top: 4rem;
-  left: -1.75rem;
+  left: -2.2rem;
 }
 
 .tree-right {
   position: absolute;
   top: 4rem;
-  right: -0.95rem;
+  right: -1.15rem;
 }
 
 @keyframes swaying {
@@ -302,7 +303,7 @@ REUSABLE SECTIONS
 
 .tree-left img,
 .tree-right img {
-  width: clamp(0rem, 20vw, 30rem);
+  width: 20vw;
   animation: swaying 7s infinite;
 }
 
@@ -417,8 +418,8 @@ HOME - Christmas
 }
 
 .home-christmas .container {
-  padding-top: clamp(3rem, 16vh, 10rem);
-  padding-bottom: clamp(3rem, 16vh, 10rem);
+  padding-top: 9.5rem;
+  padding-bottom: 10rem;
 }
 
 .home-christmas h1 {
@@ -473,6 +474,7 @@ HOME - Reviews
 .home-reviews p {
   font-size: 1.35rem;
   text-align: center;
+  padding: 0 0.15rem;
 }
 
 .home-reviews__container {
@@ -482,6 +484,7 @@ HOME - Reviews
   gap: 2rem;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding: 0 0.5rem;
   padding-top: 3rem;
   padding-bottom: 10rem;
   background-color: hsl(221, 94%, 7%);
@@ -530,6 +533,7 @@ PARCOURS
   position: relative;
   text-align: center;
   overflow: hidden;
+  padding: 0 1rem;
 }
 
 .parcours__container {
@@ -541,7 +545,7 @@ PARCOURS
   max-width: 30rem;
   font-size: 2.5rem;
   line-height: 110%;
-  padding-top: 10rem;
+  padding-top: 7.5rem;
 }
 
 .parcours p {
@@ -578,8 +582,14 @@ PARCOURS
   margin: 0 auto;
 }
 
+.parcours__galery h2 {
+  font-size: 2.5rem;
+  padding-top: 5rem;
+}
+
 .parcours__galery p {
-  margin-bottom: 2.5rem;
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
 }
 
 /*
@@ -590,7 +600,7 @@ PRAKTISCH
 
 .practical {
   text-align: center;
-  padding-bottom: 3rem;
+  padding-bottom: 10rem;
 }
 
 .practical .tree-left,
@@ -600,8 +610,8 @@ PRAKTISCH
 
 .practical h1,
 .practical h2 {
-  font-size: 2.25rem;
-  margin-top: 5rem;
+  font-size: 2.45rem;
+  margin-top: 7rem;
   line-height: 110%;
 }
 
@@ -614,13 +624,26 @@ PRAKTISCH
 }
 
 .practical p {
-  font-size: 1.35rem;
+  font-size: 1.45rem;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 .practical a {
   display: inline;
+  color: white;
+  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-color: hsl(149, 76%, 46%);
+}
+
+.practical__address {
+  font-size: 1.35rem;
+}
+
+.practical a:hover {
+  color: hsl(149, 76%, 46%);
+  text-decoration: none;
 }
 
 /*
@@ -630,21 +653,19 @@ GALERY
 */
 
 .galery__text {
+  position: relative;
   text-align: center;
   margin: 2rem 0;
-  padding-top: 5rem;
-  font-size: 1.2rem;
+  padding: 0 1rem;
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.45rem;
 }
 
 .galery__text h1 {
-  font-size: 2rem;
+  font-size: 2.45rem;
   line-height: 110%;
-  max-width: 20rem;
-}
-
-.galery-grid .tree-left,
-.galery-grid .tree-right {
-  top: 8rem;
+  max-width: 25rem;
 }
 
 /* GALERY - Grid */
@@ -658,7 +679,7 @@ GALERY
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(9, 1fr);
   gap: 1rem;
-  max-width: 45rem;
+  max-width: 49.5rem;
 }
 
 .galery-grid img {
@@ -723,4 +744,37 @@ GALERY
 
 .galery-grid .grid-15 {
   grid-column: span 6;
+}
+
+/*
+===================================
+FAQ
+===================================
+*/
+
+.faq {
+  position: relative;
+}
+
+.faq h1 {
+  padding-top: 7rem;
+  font-size: 2rem;
+}
+
+.faq span {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.35rem;
+  margin-bottom: 3rem;
+}
+
+.faq a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: hsl(149, 76%, 46%);
+}
+
+.faq a:hover {
+  color: hsl(149, 76%, 46%);
+  text-decoration: none;
 }

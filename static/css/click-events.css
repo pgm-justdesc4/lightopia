@@ -137,7 +137,7 @@ MAP
   width: 5%;
   background-color: hsl(149, 76%, 46%);
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.7rem;
   border-radius: 50%;
   animation: bounce 1.5s infinite;
   transform: translateX(-50%) translateY(-50%);
@@ -151,7 +151,7 @@ MAP
   position: absolute;
   top: 0;
   left: 0;
-  background-color: hsla(216, 8%, 12%, 0.776);
+  background-color: hsla(0, 0%, 0%, 0.833);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,21 +217,27 @@ FAQ
 ===================================
 */
 
-.faq {
+.faq-click-event {
   list-style: none;
   padding: 0;
+  margin-bottom: 10rem;
 }
 
-.faq h3 {
+.faq-click-event h2 {
+  font-size: 1.75rem;
+  margin: 3.5rem 0 2rem 0;
+}
+
+.faq-click-event h3 {
   margin-right: 2rem;
 }
 
-.faq ul {
+.faq-click-event ul {
   text-decoration: none;
   padding: 0;
 }
 
-.faq li {
+.faq-click-event li {
   position: relative;
   list-style: none;
 }
@@ -240,17 +246,19 @@ FAQ
   cursor: pointer;
   border: 0.1rem solid white;
   border-radius: 0.5rem;
-  margin: 2rem 0;
-  padding: 1rem;
+  margin: 0.5rem 0;
+  padding: 1.5rem;
 }
 
 .faq__question {
   text-align: start;
   text-transform: none;
+  font-size: 1.15rem;
 }
 
 .faq__answer {
   margin-top: 0.5rem;
+  margin-right: 3rem;
 }
 
 .faq-plus {

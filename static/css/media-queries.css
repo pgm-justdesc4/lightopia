@@ -10,12 +10,6 @@
   }
 }
 
-@media (max-width: 800px) {
-  .map-pointers img {
-    width: 3rem;
-  }
-}
-
 @media (max-width: 647px) {
   .container-header {
     padding: 0.5rem;
@@ -26,6 +20,10 @@
     padding: 0.63rem 1.65rem;
     border-radius: 0.8rem;
   }
+  .tree-left,
+  .tree-right {
+    display: none;
+  }
   .galery-reusable figure {
     width: 50%;
   }
@@ -34,6 +32,9 @@
   }
   .home-christmas__bg-img {
     height: 100%;
+  }
+  .map-pointers {
+    padding: 0.35rem;
   }
   .footer__text {
     gap: 5rem;
@@ -46,9 +47,11 @@
     right: 2.5rem;
     padding: 2.75rem;
   }
-
-  .home-video__dates-text {
+  .home-vide5remo__dates-text {
     font-size: 1rem;
+  }
+  .map-pointers {
+    padding: 0.25rem;
   }
 }
 

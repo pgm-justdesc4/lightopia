@@ -39,7 +39,7 @@ const questions = [
     answer: `Daldagen: maandagen tot donderdagen
     Piekdagen: weekends, vakanties en Kerstperiode (zeer populaire data)
     <br class="br-extra">
-    Opgelet: <a href="#">kijk</a> hier de openingsdagen na.
+    Opgelet: kijk <a href="#">hier</a> de openingsdagen na.
     <br class="br-extra">
     Deze prijsstelling helpt bezoekers om tijdens een goedkopere periode naar Lightopia te komen.`,
   },
